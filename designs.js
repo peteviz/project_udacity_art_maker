@@ -23,11 +23,11 @@ function makecanvas(height, span) {
     //  Your code goes  here!
 
     // Loop and add table rows
-    for (var i = 0; i < height; i++ ) {
+    for (var i = 0; i < span; i++ ) {
         let row = table.insertRow(i);
 
         // Loop and add table cells
-        for (var j = 0; j < span;  j++){
+        for (var j = 0; j < height;  j++){
             let col = row.insertCell(j);
             //paintt the canvas
             col.addEventListener('click', (event) => {
